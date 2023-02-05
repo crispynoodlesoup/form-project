@@ -6,8 +6,6 @@ form.addEventListener('submit', submitForm);
 function submitForm(e) {
     if(document.getElementById("confirm-password").value != document.getElementById("password").value) {
         alert("Your passwords do not match, please retype them");
-        document.getElementById("confirm-password").value = "";
-        document.getElementById("password").value = "";
         e.preventDefault();
     }
 }
