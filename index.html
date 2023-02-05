@@ -14,22 +14,63 @@
     <main>
         <div class="content-wrap">
             <h2>Sign Up for Infinite Donuts!</h2>
+            <h6>Required fields marked with *</h6>
             <form action="">
                 <div class="flex-row">
-                    <p class="fieldset left">
+                    <p class="fieldset-div left">
                         <label for="name">
-                            <i class="fa fa-user"></i> Username
+                            <i class="fa fa-user"></i> Username *
                         </label>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" required>
                     </p>
-                    <p class="fieldset right">
+                    <p class="fieldset-div right">
                         <label for="email">
-                            <i class="fa fa-envelope"></i> Email
+                            <i class="fa fa-envelope"></i> Email *
                         </label>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </p>
                 </div>
+                <fieldset>
+                    <p>Favorite Donut?</p>
+                    <div class="flex-row no-gap">
+                        <label class="button-style" for="glaze">Glaze
+                            <input type="radio" id="glaze" name="donut-select" value="glaze">
+                            <i class="fa fa-check"></i>
+                        </label>
+                        <label class="button-style" for="pink">Pink
+                            <input type="radio" id="pink" name="donut-select" value="pink">
+                            <i class="fa fa-check"></i>
+                        </label>
+                    </div>
+                    <div class="flex-row no-gap">
+                        <label class="button-style" for="chocolate">Chocolate
+                            <input type="radio" id="chocolate" name="donut-select" value="chocolate">
+                            <i class="fa fa-check"></i>
+                        </label>
+                        <label class="button-style" for="sugar">Sugar
+                            <input type="radio" id="sugar" name="donut-select" value="sugar">
+                            <i class="fa fa-check"></i>
+                        </label>
+                    </div>
+                </fieldset>
+                <label class="button-style check-box" for="sprinkle">Sprinkles?
+                    <input type="checkbox" id="sprinkle" name="sprinkle" value="sprinkle">
+                    <i class="fa fa-check"></i>
+                    <i class="fa fa-x"></i>
+                </label>
+                <div class="flex-row">
+                    <p class="fieldset-div">
+                        <label for="password">Password *</label>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+                    <p class="fieldset-div">
+                        <label for="confirm-password">Confirm Password *</label>
+                        <input type="password" id="confirm-password" required>
+                    </p>
+                </div>
+
                 <button class="submit" type="submit">Submit</button>
+
             </form>
         </div>
     </main>
